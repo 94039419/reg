@@ -31,3 +31,10 @@ input{
 .weak{
 	background:#C00;
 	}
+	
+.pass_p2{
+	width:213px;
+	height:17px;
+	line-height:22px;
+	margin-left:75px;;
+	}
