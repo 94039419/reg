@@ -1,0 +1,33 @@
+#pass_p,#user_p,#user_prompt,#pass_prompt{
+	line-height:10px;
+	visibility:hidden;
+	}
+
+label{
+	display:inline-block;
+	width:70px;
+	text-align:left;
+	}
+	
+input{
+	width:210px;
+	border:1px solie red;
+	}
+	
+.pass_p1{
+	width:213px;
+	height:17px;
+	line-height:22px;
+	margin-left:75px;;
+	}
+	
+.pass_strength{
+	display:inline-block;
+	width:71px;
+	background:#F60;
+	text-align:center;
+	color:#FFF;
+	}
+.weak{
+	background:#C00;
+	}
