@@ -1,4 +1,4 @@
-	window.onload=function(){
+		window.onload=function(){
 	
 	var user_input=document.getElementById("user"),
 		user_prompt=document.getElementById("user_prompt"),
@@ -15,7 +15,11 @@
 	
 	user_input.onfocus=function(){													//获得焦点时
 		user_prompt.style.visibility="visible";
-		user_prompt.innerHTML="请输入用户名"
+		user_prompt.innerHTML="请输入英文用户名（长度范围5-15）"
+		
+		var pass_prompt2=document.getElementById("pass_prompt2");
+		var pass_p2=document.getElementById("pass_p2");
+		
 	
 	}
 	user_input.onkeyup=function(){													//输入文字时
@@ -84,7 +88,7 @@
 			pass_prompt.innerHTML="不能全为字母";
 		}else 
 		if(myvalue.length<5||myvalue.length>15){
-			pass_prompt.innerHTML="请输入5-10个字符";
+			pass_prompt.innerHTML="请输入5-15个字符";
 		}else{
 			pass_prompt.innerHTML="验证成功";	
 		}
@@ -152,4 +156,37 @@
 		}  
 	}  
 
+
+	
+
+	
+	
+
+	
+	password_config.onfocus=function(){
+		pass_prompt2.style.visibility="visible";
+		pass_prompt2.innerHTML="请确认密码"	
+	}
+	password_config.onkeyup=function(){
+
+		
+	}
+	password_config.onblur=function(){
+		var myvalue= password_input.value;
+		var configpass=password_config.value;
+		if(configpass.length==0){
+			pass_p2.innerHTML="密码不能为空";
+		}
+		else if(myvalue==configpass){
+			pass_p2.innerHTML="密码确认成功";
+		}else{
+			pass_p2.innerHTML="密码确认错误，请再次输入";
+			}
+		
+	}
+	
+	
+
+	
+	
 }
